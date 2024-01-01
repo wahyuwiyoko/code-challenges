@@ -8,7 +8,7 @@ For example:
 - 153 is an Armstrong number, because `153 = 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153`
 - 154 is not an Armstrong number, because `154 != 1^3 + 5^3 + 4^3 = 1 + 125 + 64 = 190`
 
-Compile and run the file:
+Compile and run the executable:
 1. `gcc armstrong_numbers.c -o armstrong -lm`
 2. `./armstrong`
 */
@@ -29,9 +29,9 @@ int get_int_length(int value) {
 
 int main(void) {
     int numbers[4] = {9, 10, 153, 154};
-    int arrayLength = sizeof(numbers) / sizeof(numbers[0]);
+    int array_length = sizeof(numbers) / sizeof(numbers[0]);
 
-    for (int i = 0; i < arrayLength; i++) {
+    for (int i = 0; i < array_length; i++) {
         int value = numbers[i];
         float total = 0;
 
